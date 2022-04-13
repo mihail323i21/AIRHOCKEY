@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AIRHOCKEY.Properties
+namespace AirHockey.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
