@@ -25,7 +25,7 @@ namespace AirHockey
 
         private void Init()
         {
-            RedPlayerSprite = new Bitmap("C:\\projects c#\\AIRHOCKEY\\AIRHOCKEY\\bin\\RedPlayer.png");
+            RedPlayerSprite = new Bitmap("..\\spriteModels\\RedPlayer.png");
 
             var redPlayer = new Player(100, 100, RedPlayerSprite);
             Invalidate();
