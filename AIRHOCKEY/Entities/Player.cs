@@ -6,19 +6,17 @@ namespace AirHockey.Models
     {
         public int posX;
         public int posY;
-
         public int idleFrames;
         public int motionFrames;
-        
-        public Image redPlayer;
+        public Image player;
 
-        public Player(int posX, int posY, int idleFrames, int motionFrames, Image redPlayer)
+        public Player(int posX, int posY, Image player)
         {
             this.posX = posX;
             this.posY = posY;
-            this.idleFrames = idleFrames;
-            this.motionFrames = motionFrames;
-            this.redPlayer = redPlayer;
+            this.idleFrames = 3;
+            this.motionFrames = 10;
+            this.player = player;
         }
 
         public void Move(int dirX, int dirY)

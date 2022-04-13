@@ -14,25 +14,27 @@ namespace AirHockey
 {
     public partial class Form1 : Form
     {
-        public Image PlayerSprite;
+        private Image RedPlayerSprite;
+        
         public Form1()
         {
             InitializeComponent();
             Init();
+            
         }
-        
-        public void Init()
-        {
-            PlayerSprite = new Bitmap("Models\\pictures\\RedPlayer.png");
 
-            var player = new Player(100, 100, RedPlayer.idleFrames, RedPlayer.motionFrames, PlayerSprite);
+        private void Init()
+        {
+            RedPlayerSprite = new Bitmap("C:\\projects c#\\AIRHOCKEY\\AIRHOCKEY\\bin\\RedPlayer.png");
+
+            var redPlayer = new Player(100, 100, RedPlayerSprite);
             Invalidate();
         }
         private void OnPaint(object sender, PaintEventArgs e)
         {
             var g = e.Graphics;
             
-            g.DrawImage(PlayerSprite, new PointF(10,10));
+            g.DrawImage(RedPlayerSprite, new PointF(Width / 2.65f, Height / 14f));
         }
     }
 }
